@@ -1,0 +1,33 @@
+{
+  "name": "compression-node",
+  "version": "1.0.0",
+  "description": "Node compression library, playing around with Google Snappy",
+  "main": "compression.js",
+  "scripts": {
+    "test": "nyc ava test.js && semistandard | snazzy",
+    "install": "node-gyp rebuild"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/1337programming/compression-node.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1337programming/compression-node/issues"
+  },
+  "gyp": true,
+  "homepage": "https://github.com/1337programming/compression-node",
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "bluebird": "^3.3.4",
+    "nyc": "^8.3.0",
+    "semistandard": "^9.0.0",
+    "snazzy": "^5.0.0"
+  },
+  "dependencies": {
+    "bindings": "^1.2.1",
+    "nan": "^2.4.0",
+    "node-gyp": "^3.4.0"
+  }
+}
